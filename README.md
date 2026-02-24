@@ -1,38 +1,65 @@
-Diligence AI - Supplier Risk Analysis Agent
+# Diligence AI – Supplier Risk Analysis Agent
 
-Diligence AI is a specialized conversational agent designed for compliance and risk analysis. It automates the process of validating Brazilian company IDs (CNPJ) and calculating security scores by integrating Microsoft Copilot Studio with Power Automate and the BrasilAPI.
+**Diligence AI** is a specialized conversational agent built for compliance and supplier risk analysis. It automates the validation of Brazilian company IDs (CNPJ) and generates security scores in real time by integrating Microsoft Copilot Studio, Power Automate, and BrasilAPI.
 
-🚀 Features
-Automated CNPJ Validation: Captures user input and verifies corporate data in real-time.
 
-Smart Error Handling: A custom logic flow that identifies invalid inputs and prompts for correction without restarting the conversation.
+## 🚀 Features
 
-Inter-Topic Redirection: Seamlessly transitions from error-handling routines directly to the risk analysis engine.
+### 🔍 Automated CNPJ Validation  
+Captures user input and validates corporate data in real time through API integration.
 
-Low-Code Integration: Uses Power Automate to fetch data from external APIs (BrasilAPI).
+### 🧠 Smart Error Handling  
+Implements a custom logic flow that detects invalid CNPJ inputs and prompts the user for correction without restarting the conversation.
 
-🛠️ Technical Architecture
-1. Conversational Flow & UX
-The bot is structured to prioritize user experience (UX) by avoiding "dead ends." When a user provides an incorrect CNPJ format:
+### 🔄 Inter-Topic Redirection  
+Ensures a seamless user journey by redirecting from error-handling routines directly to the Risk Analysis Engine topic.
 
-The Error Topic triggers.
+### ⚡ Low-Code Integration  
+Leverages Power Automate to securely fetch and process external data from BrasilAPI.
 
-The bot requests the correct 14-digit number using a Global Variable (Global.Var_CNPJ).
+---
 
-Once corrected, the flow uses a "Go to step" or "Go to another topic" action to jump directly into the Risk Analysis Agent topic.
+## 🛠️ Technical Architecture
 
-2. Tools Used
-Microsoft Copilot Studio: Agent orchestration and natural language processing.
+### 1. Conversational Flow & UX
 
-Power Automate: Backend automation and API communication.
+The agent is structured to prioritize user experience (UX) by avoiding conversational “dead ends.”  
 
-BrasilAPI: Data source for Brazilian corporate records.
+When a user provides an incorrect CNPJ format:
 
-📂 Project Structure
-/solutions: Contains the exported .zip solution file for environment deployment.
+1. The **Error Topic** is triggered.  
+2. The bot requests the correct 14-digit number using a Global Variable (`Global.Var_CNPJ`).  
+3. Once corrected, the flow uses a **“Go to step”** or **“Go to another topic”** action to jump directly into the **Risk Analysis Agent** topic.
 
-📝 How to Use
-Import the solution into your Power Platform environment.
-Trigger the bot by saying "Quero analisar uma empresa" (I want to analyze a company).
+---
 
-Enter the CNPJ when prompted. If an error occurs, the bot will guide you back to the analysis phase automatically.
+### 2. Tools Used
+
+- **Microsoft Copilot Studio** – Agent orchestration and natural language processing  
+- **Power Automate** – Backend automation and API communication  
+- **BrasilAPI** – Data source for Brazilian corporate records  
+
+---
+
+## 📂 Project Structure
+
+```
+/solutions
+ └── diligence-ai-solution.zip
+```
+
+Contains the exported `.zip` solution file for environment deployment.
+
+---
+
+## 📝 How to Use
+
+1. Import the solution into your Power Platform environment.  
+2. Trigger the bot by saying:  
+
+   ```
+   Quero analisar uma empresa
+   ```
+
+3. Enter the CNPJ when prompted.  
+
