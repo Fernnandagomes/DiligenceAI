@@ -36,7 +36,9 @@ When a user provides an incorrect CNPJ format:
 ### 2. Tools Used
 
 - **Microsoft Copilot Studio** – Agent orchestration and natural language processing  
-- **Power Automate** – Backend automation and API communication  
+- **Power Automate** – Backend automation and API communication
+- **SharePoint** - To record the history
+- **PowerBI** - For data analysis
 - **BrasilAPI** – Data source for Brazilian corporate records  
 
 ---
