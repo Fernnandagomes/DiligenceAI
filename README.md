@@ -46,8 +46,7 @@ When a user provides an incorrect CNPJ format:
 ## 📂 Project Structure
 
 ```
-/solutions
- └── diligence-ai-solution.zip
+/copilot solution
 ```
 
 Contains the exported `.zip` solution file for environment deployment.
