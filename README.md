@@ -1,7 +1,10 @@
 # Diligence AI – Supplier Risk Analysis Agent
 
 **Diligence AI** is a specialized conversational agent built for compliance and supplier risk analysis. It automates the validation of Brazilian company IDs (CNPJ) and generates security scores in real time by integrating Microsoft Copilot Studio, Power Automate, and BrasilAPI.
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ba851a31-eef5-46fe-bc64-7154fa118de1" 
+       alt="Diligence AI Dashboard" width="800"/>
+</p>
 
 ## 🚀 Features
 
